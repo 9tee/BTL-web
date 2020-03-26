@@ -1,0 +1,53 @@
+html{
+    width: 100%;
+}
+body{
+    margin: 0;
+}
+
+div.header-wrapper{
+    height: 60px;
+    justify-content: center;
+    width: 100%;
+}
+
+div.header{
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    max-width: 1920px;
+    min-width: 950px;
+}
+
+ul.items-wrapper{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul.items-wrapper li{
+    display: block;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+li.header-item{
+    margin-top: 20px;
+    font-family: Montserrat,sans-serif; 
+    color: #484848;
+}
+li.header-item a{
+    text-decoration: none;
+    color: #484848
+}
+
+img.logo{
+    width: 50px;
+    height: 50px;
+}
+img.shop-cart{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}

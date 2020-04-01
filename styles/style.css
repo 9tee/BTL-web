@@ -97,7 +97,7 @@ body { font-family: sans-serif; }
 
 .carousel img {
     display: block;
-    width: 102%;
+    width: 75%;
 }
 
 @media screen and ( min-width: 1024px ) {

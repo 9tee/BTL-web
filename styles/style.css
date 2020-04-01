@@ -1,3 +1,4 @@
+/* header start */
 html{
     width: 100%;
     min-width: 950px;
@@ -24,6 +25,7 @@ div.header{
 
 ul.items-wrapper{
     display: flex;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -41,7 +43,7 @@ li.header-item{
 li.header-item a{
     font-family: Montserrat,sans-serif; 
     text-decoration: none;
-    color: #484848
+    color: #484848;
 }
 
 img.logo{
@@ -53,7 +55,6 @@ img.shop-cart{
     width: 30px;
     height: 30px;
 }
-
 
 li.dropdown {
     display: inline-block;
@@ -70,7 +71,7 @@ div.dropdown-content {
 }
 
 div.dropdown-content a {
-    color: black;
+    color: #484848;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -80,3 +81,5 @@ div.dropdown-content a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* header end*/

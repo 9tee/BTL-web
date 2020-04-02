@@ -97,7 +97,11 @@ body { font-family: sans-serif; }
   background: #EEE;
 }
 
-.carousel img {
+.carousel a img {
+    display: block;
+    width: 100%;
+}
+.carousel a {
     display: block;
     width: 75%;
 }

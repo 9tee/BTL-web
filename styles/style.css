@@ -81,15 +81,11 @@ div.dropdown-content a {
     display: block;
 }
 
+/*phục vụ cho slide */
 .content-wrapper {
     margin-top: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
-/*phục vụ cho slide */
-*{ box-sizing: border-box; }
-
-body { font-family: sans-serif; }
 
 .carousel {
   background: #EEE;

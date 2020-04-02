@@ -1,3 +1,4 @@
+/* header start */
 html{
     width: 100%;
     min-width: 950px;
@@ -24,6 +25,7 @@ div.header{
 
 ul.items-wrapper{
     display: flex;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -41,7 +43,7 @@ li.header-item{
 li.header-item a{
     font-family: Montserrat,sans-serif; 
     text-decoration: none;
-    color: #484848
+    color: #484848;
 }
 
 img.logo{
@@ -53,7 +55,6 @@ img.shop-cart{
     width: 30px;
     height: 30px;
 }
-
 
 li.dropdown {
     display: inline-block;
@@ -81,11 +82,16 @@ div.dropdown-content a {
     display: block;
 }
 
-/*phục vụ cho slide */
+/* header end*/
 .content-wrapper {
     margin-top: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+
+/*phục vụ cho slide start */
+*{ box-sizing: border-box; }
+
+body { font-family: sans-serif; }
 
 .carousel {
   background: #EEE;
@@ -101,5 +107,5 @@ div.dropdown-content a {
         height: 560px;
     }
 }
-/*phục vụ cho slide */
+/*phục vụ cho slide end*/
 

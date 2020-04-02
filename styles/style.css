@@ -89,10 +89,6 @@ div.dropdown-content a {
 }
 
 /*phục vụ cho slide start */
-*{ box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
 .carousel {
   background: #EEE;
 }

@@ -82,6 +82,7 @@ div.dropdown-content a {
 }
 
 /* header end*/
+/*content-wrapper start*/
 .content-wrapper {
     margin-top: 60px;
 }
@@ -105,27 +106,15 @@ div.dropdown-content a {
 }
 
 /*phục vụ cho slide end*/
-/*container - chứa các khung sản phẩm*/
-.container {
+/*container - chứa các khung sản phẩm start*/
+.container-products {
     margin-right: auto;
     margin-left: auto;
     padding-left: 10px;
     padding-right: 10px;
     width: 1170px;
 }
-
-/*khung lớn để các mảng sản phẩm */
-.productstrending {
-    margin: 0 0 20px;
-    padding: 10px 0px;
-    display: block;
-    font-family: Poppins;
-    text-align: center;
-    font-size: 14px;
-    position: relative;
-    font-weight: 400;
-}
-/*chỉnh sửa title*/
+/*prefixtitle - khung chứa title start*/
 .prefixtitle {
     margin: 40px 0 20px;
     padding: 10px 0px;
@@ -136,6 +125,7 @@ div.dropdown-content a {
     position: relative;
     font-weight: 400;
 }
+/*title start*/
 .title {
     background-color: white;
     display: inline-block;
@@ -154,22 +144,26 @@ div.dropdown-content a {
     top: 40px;
     width: 100%;
 }
-
-/*grid để các sản phẩm */
+/*title end*/
+/*prefixtitle - khung chứa title end*/
+/*grid để các sản phẩm start*/
 .grid-container {
     margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap : 20px;
+    row-gap: 20px;
     padding: 10px;
     height: auto;
     width: auto;
     position: relative;
 }
-
+/*grid item start*/
 .grid-item {
     background: #EEE;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .grid-item a img {
@@ -186,7 +180,13 @@ div.dropdown-content a {
     height: auto;
     margin: 0;
 }
-/*prefix button*/
+.grid-item:hover {
+    box-shadow: none;
+}
+
+/*grid item end*/
+/*grid để các sản phẩm end*/
+/*khung chứa button start*/
 .prefixbutton {
     margin: 40px 0 20px;
     padding: 10px 0px;
@@ -197,7 +197,7 @@ div.dropdown-content a {
     position: relative;
     font-weight: 400;
 }
-/*buton load thêm sản phẩm*/
+/*buton load thêm sản phẩm start*/
 .button {
     background-color:whitesmoke; 
     border: none;
@@ -215,247 +215,83 @@ div.dropdown-content a {
 .button:hover {
     box-shadow: none;
 }
-/* header start */
-html{
-    width: 100%;
-    min-width: 950px;
-}
-body{
-    margin: 0;
-}
+/*buton load thêm sản phẩm end*/
+/*khung chứa button end*/
+/*container - chứa các khung sản phẩm end*/
+/*content-wrapper end*/
 
-div.header-wrapper{
-    height: 60px;
-    justify-content: center;
-    width: 100%;
-    box-shadow: 0px 5px 5px 0px rgb(211,211,211);
+/*footer start*/
+/*footertop start*/
+.footertop {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 1170px;
 }
-
-div.header{
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
+/*xu ly doan text start*/
+.prefixtext{
+    margin: 40px 0 20px;
+    padding: 10px 0px;
+    display: block;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 14px;
     position: relative;
-    max-width: 1920px;
-    min-width: 950px;
+    font-weight: 400;
 }
-
-ul.items-wrapper{
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-ul.items-wrapper li{
-    display: block;
-    list-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-li.header-item{
-    margin-top: 20px;    
-}
-li.header-item a{
-    font-family: Montserrat,sans-serif; 
-    text-decoration: none;
-    color: #484848;
-}
-
-img.logo{
-    width: 50px;
-    height: 50px;
-}
-img.shop-cart{
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-}
-
-li.dropdown {
+.text {
+    background-color: white;
     display: inline-block;
-  }
-  
-div.dropdown-content {
-    display: none;
-    position: absolute; 
-    top: 60px;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    padding: 10px 30px;
+    position: relative;
+    margin: 0 auto;
+    font-family: Poppins;
+    font-size: 36px;
+    margin-top: 30px;
 }
-
-div.dropdown-content a {
-    color: #484848;
-    padding: 12px 16px;
+/*xu ly doan text end*/
+/*button sub start*/
+.buttonsub {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonsub:hover {
+    background-color: #555555;
+    color: white;
+}
+/*button sub end*/
+/*footertop end*/
+/*footermid start*/
+.footermid {
+    margin-top: 100px;
+    background-color: #232323;
+    width: auto;
+    height: 250px;
     text-align: left;
 }
-  
-.dropdown:hover .dropdown-content {
-    display: block;
+.name {
+    color: #6c6c6c;
+    font-family: Poppins;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 3    0px;
 }
-
-/* header end*/
-
-/* content start */
-
-div.content-wrapper{
-    margin: 0 auto;
-    margin-top: 20px;
-    max-width: 1920px;    
+/*footermid end*/
+/*footerbot start*/
+.footerbot {
+    background-color: #232323;
+    width: auto;
+    color: #6c6c6c;
 }
-
-/*phục vụ cho slide start */
-.carousel {
-  background: #EEE;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.carousel a img {
-    display: block;
-    width: 100%;
-}
-.carousel a {
-    display: block;
-    width: 75%;
-}
-
-@media screen and ( min-width: 1024px ) {
-    .carousel img {
-        height: 560px;
-    }
-}
-/*phục vụ cho slide end*/
-
-/* filter menu start */
-div.filter-wrapper{
-    float: left;
-    margin-top: 20px;
-    width: 190px;
-    margin-right: 5px;
-    margin-left: 5px;
-    height: 400px;
-    border: 1px solid #f6f6f6;
-}
-
-div.filter-title{
-    font-size: 25px;
-    width: 100%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #A9A9A9;
-}
-
-/*check box start*/
-/* Customize the label (the container) */
-.checkbox-container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 16px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-.checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkbox-container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-div.checkbox{
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-/*check box end*/
-
-
-
-/* filter menu end */
-
-/* content start */
-div.content{
-    overflow: hidden; 
-    height: 500px;
-}
-
-div.content-header{
-    height: 50px;
-    overflow: auto;
-    background-color: #f6f6f6;
-}
-
-div.sort-wrapper{
-    padding: 15px 0px;
-    height: 20px; 
-    margin-left: 30px;
-}
-
-#sort{
-    font-size: 0.875rem;
-    max-width: 100%;
-    background-color: transparent;
-    color: #4d4d4d;
-    border: 0;
-    box-shadow: none;
-}
-/* content end*/
-
-
-/* content end */
+/*footerbot end*/
+/*footer end*/

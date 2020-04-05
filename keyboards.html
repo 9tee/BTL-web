@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/flickity.css" media="screen">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="header">
+            <ul class="items-wrapper">
+                <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+                <li class="header-item"><a href="#">Home</a></li>
+                <li class="header-item"><a href="#">Keyboards</a></li>
+                <li class="header-item"><a href="#">Keycaps</a></li>
+                <li class="header-item"><a href="#">Switches</a></li>
+                <li class="header-item"><a href="#">Deskmats</a></li>
+                <li class="header-item dropdown">
+                    <a href="#">Other</a>
+                    <div class="dropdown-content">
+                        <a href="#">Case</a>
+                        <a href="#">Plate</a>
+                        <a href="#">Stabilizer</a>
+                        <a href="#">Cable</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="items-wrapper" style="position: absolute; right: 0;">
+                <li><a href="#"> <img src="./images/shop cart.png" alt="shop cart" class="shop-cart"></a></li>
+                <li class="header-item"><a href="3">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="filter-wrapper">
+            <div class="filter-title">Layout</div>
+            <div class="checkbox keyboard-layout">
+                <label class="checkbox-container">Fullsize
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">TKL
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">60%
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="content" style="background-color: powderblue;">
+            <div class="content-header">
+                <div class="sort-wrapper">
+                    <label for="sort">Choose a car:</label>
+                    <select id="sort">
+                        <option value="Best">Best buy</option>
+                        <option value="AtoZ">From A to Z</option>
+                        <option value="ZtoA">From Z to A</option>
+                        <option value="PriceLowToHigh">Price,from low to high</option>
+                        <option value="PriceHighToLow">Price,from high to low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+
+</html>

@@ -279,6 +279,9 @@ div.dropdown-content a {
     height: 250px;
     text-align: left;
 }
+.box {
+    padding-top: 85px;
+}
 .name {
     color: #6c6c6c;
     font-family: Poppins;

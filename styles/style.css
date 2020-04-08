@@ -2,6 +2,8 @@
 html{
     width: 100%;
     min-width: 950px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 body{
     margin: 0;

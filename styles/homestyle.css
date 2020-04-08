@@ -54,7 +54,7 @@
 .prefixtitle:before {
     border-bottom: 1px solid #ebebeb;
     content: "";
-    height: 0;
+    height: 10px;
     left: 0;
     position: absolute;
     top: 40px;

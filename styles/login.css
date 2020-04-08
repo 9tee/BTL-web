@@ -1,0 +1,35 @@
+/*cài đặt các cột start*/
+
+.col-center-block { 
+    float: none;    
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto;
+}
+.col-md-3 {
+    margin: auto;
+    top: 30px;
+}
+/*cài đặt các cột end*/   
+/*cài đặt container start*/ 
+.container {    
+    height: 100%;   
+    width: 100%;
+}
+.container {    
+    display: table; 
+    vertical-align: middle;
+    margin-top: 200px;
+    margin-left: 600px;
+    text-align: center;
+}
+/*cài đặt container start*/
+/*cài đặt text start*/
+.text {
+    color:black;
+    padding: 0 15px;
+    font-size: 30px;
+    font-family: 'Roboto-Condensed-Bold';
+    text-transform: uppercase;
+}
+/*cài đặt text start*/

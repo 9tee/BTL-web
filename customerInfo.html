@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/customerInfo.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="header">
+            <ul class="items-wrapper">
+                <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+                <li class="header-item"><a href="#">Home</a></li>
+                <li class="header-item"><a href="#">Keyboards</a></li>
+                <li class="header-item"><a href="#">Keycaps</a></li>
+                <li class="header-item"><a href="#">Switches</a></li>
+                <li class="header-item"><a href="#">Deskmats</a></li>
+                <li class="header-item dropdown">
+                    <a href="#">Other</a>
+                    <div class="dropdown-content">
+                        <a href="#">Case</a>
+                        <a href="#">Plate</a>
+                        <a href="#">Stabilizer</a>
+                        <a href="#">Cable</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="items-wrapper" style="position: absolute; right: 0;">
+                <li><a href="#"> <img src="./images/shop cart.png" alt="shop cart" class="shop-cart"></a></li>
+                <li class="header-item"><a href="3">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="info">
+            <div>Thông tin tài khoản</div>
+            <div> Email <span><input type="text"> </span> </div>
+            <div> SĐT <span><input type="text"> </span> </div>
+            <div> Họ và tên đệm <span><input type="text"> </span> </div>
+            <div> Tên <span><input type="text"> </span> </div>
+            <div> Giới tính <span> Nam <input type="radio" name="gender"> Nữ <input type="radio" name="gender"> </span>
+            </div>
+            <div> Ngày sinh <span><input type="text"> </span> </div>
+            <div class="change-password-div" onClick="theFuntion()"> Thay đổi mật khẩu </div>
+            <div class="password-changer">
+                <div>
+                    <label for="old-password"> Mật khẩu cũ</label>
+                    <input type="password" id="old-password">
+                </div>
+                <div>
+                    <label for="password"> Nhập mật khẩu</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <label for="re-password"> Nhập lại mật khẩu</label>
+                    <input type="password" id="re-password">
+                </div>
+            </div>
+            <div> <input type="button" value="Thay đổi"> </div>
+        </div>
+        <div class="shopping-history">
+            <div> Lịch sử mua hàng </div>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footermid">
+            <div class="box">
+                <div class="name">Trần Đức Dũng</div>
+                <div class="name">Nguyễn Sơn Nam</div>
+            </div>
+        </div>
+        <div class="footerbot">
+            <div>Copyright © 2020 Web. All Rights Reserved</div>
+        </div>
+    </footer>
+</body>
+<script src="bootstrap-4.4.1-dist/jquery-3.5.1.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+<script>
+    function theFuntion() {
+        var changer = document.querySelector("div.password-changer");
+        changer.style.display = "block";
+    }
+</script>
+
+</html>

@@ -1,0 +1,13 @@
+div.content-wrapper{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 600px;
+}
+
+div.change-password-div:hover{
+    cursor: pointer;
+}
+
+div.password-changer{
+    display: none;
+}
